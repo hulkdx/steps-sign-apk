@@ -68,7 +68,7 @@ func (model *Model) LatestBuildToolsDir() (string, error) {
 		return "", errors.New("failed to find latest build-tools dir")
 	}
 
-	return filepath.Join(buildTools, latestVersion.String()), nil
+	return filepath.Join(buildTools, "29.0.2"), nil
 }
 
 // LatestBuildToolPath ...
